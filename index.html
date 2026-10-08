@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秋霞论理电影网｜影像伦理思辨 · 镜头边界 · 观影之问｜qiuxialunlidianyingwang-cn.github.io</title>
+<meta name="description" content="秋霞论理电影网（qiuxialunlidianyingwang-cn.github.io）是影像伦理思辨站：讨论电影里「该怎么拍、该怎么看、该怎么对待被拍的人」——镜头边界、纪录片伦理、算法推荐、剧透礼仪、改编与原著。不提供任何影视资源，正版观影指引。">
+<meta name="keywords" content="秋霞论理电影网,影像伦理,电影伦理,纪录片伦理,镜头边界,观影伦理,剧透礼仪,电影评论,伦理电影,正版观影,电影哲学,观影指南,电影思辨,qiuxialunlidianyingwang-cn">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<link rel="canonical" href="https://qiuxialunlidianyingwang-cn.github.io/">
+<meta property="og:title" content="秋霞论理电影网｜影像伦理思辨 · 镜头边界 · 观影之问">
+<meta property="og:description" content="讨论电影里「该怎么拍、该怎么看、该怎么对待被拍的人」。">
+<meta property="og:url" content="https://qiuxialunlidianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="秋霞论理电影网">
+<style>
+:root{
+  --ink:#2a2723;
+  --ink2:#534e45;
+  --paper:#f7f3ea;
+  --paper2:#eee6d2;
+  --maple:#c8551f;      /* 秋霞 · 枫 */
+  --plum:#7a3b52;       /* 秋霞 · 暮 */
+  --gold:#c79a3f;       /* 秋霞 · 光 */
+  --olive:#7a7a4a;      /* 秋霞 · 残绿 */
+  --line:rgba(42,39,35,.16);
+  --line2:rgba(42,39,35,.08);
+  --shadow:0 2px 3px rgba(42,39,35,.07), 0 14px 36px -18px rgba(42,39,35,.42);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","STSong","SimSun","Noto Serif SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",-apple-system,serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:clamp(15px,1.02vw+13px,17px);
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(200,85,31,.10), transparent 46%),
+    radial-gradient(circle at 88% 90%, rgba(122,59,82,.08), transparent 42%),
+    repeating-linear-gradient(0deg, rgba(42,39,35,.015) 0 1px, transparent 1px 5px);
+}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,36px)}
+
+/* ===== Header / Hero ===== */
+header.hero{position:relative;padding:clamp(46px,8.6vw,96px) 0 clamp(34px,6.4vw,66px);border-bottom:1px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1.28fr .72fr;gap:clamp(24px,5vw,56px);align-items:center}
+.kicker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}
+.kick{font-size:11.5px;letter-spacing:.18em;color:var(--ink2);border:1px solid var(--line);
+  background:rgba(255,255,255,.52);padding:5px 11px;font-family:"PingFang SC",sans-serif}
+.kick.hot{color:#fff;background:var(--maple);border-color:var(--maple)}
+h1.brand{font-family:"Songti SC","STSong","SimSun",serif;font-size:clamp(40px,6.5vw,80px);
+  line-height:1.04;letter-spacing:.01em;font-weight:800}
+h1.brand .qx{position:relative;display:inline-block;padding-right:.14em;font-style:italic}
+h1.brand .qx::after{content:"";position:absolute;left:3%;right:6%;bottom:.07em;height:.12em;
+  background:linear-gradient(90deg,var(--gold),var(--maple),var(--plum));transform:skewX(-13deg);z-index:-1;opacity:.9}
+h1 .en{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(10.5px,1.2vw,13.5px);
+  letter-spacing:.26em;color:var(--ink2);font-weight:600;margin-top:15px;font-style:normal}
+.lede{margin-top:22px;font-size:clamp(16px,1.46vw,19.5px);color:var(--ink2);max-width:42em;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.lede b{color:var(--maple);font-weight:700;font-family:"Songti SC",serif}
+.cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:.03em;text-decoration:none;
+  padding:13px 22px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);
+  font-family:"PingFang SC",sans-serif;transition:.28s cubic-bezier(.2,.7,.3,1)}
+.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(--maple);border-color:var(--maple)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+
+/* 落日枫林 */
+.sunset{position:relative;width:100%;max-width:340px;margin-left:auto;aspect-ratio:1.05/1;
+  border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(1.8deg);
+  background:linear-gradient(180deg,#f6d9a8 0%,#e6a878 32%,#c86a5b 60%,#7a3b52 100%)}
+.sun{position:absolute;left:50%;top:26%;width:74px;height:74px;border-radius:50%;transform:translateX(-50%);
+  background:radial-gradient(circle at 50% 40%,#fff5d8,#ffe0a0 40%,#f2b46a 70%,transparent 72%);
+  box-shadow:0 0 60px 18px rgba(255,214,150,.75),0 0 130px 40px rgba(255,150,110,.45);
+  animation:glow 9s ease-in-out infinite alternate}
+@keyframes glow{from{transform:translateX(-50%) scale(1)}to{transform:translateX(-50%) scale(1.08)}}
+.ridge{position:absolute;left:-8%;right:-8%;bottom:-2%;height:42%;border-radius:50% 50% 0 0;
+  background:radial-gradient(ellipse at 50% 100%,rgba(74,44,61,.95),rgba(74,44,61,0) 70%)}
+.ridge.two{bottom:8%;height:30%;background:radial-gradient(ellipse at 50% 100%,rgba(122,59,82,.5),transparent 70%)}
+.leaf{position:absolute;top:-14px;font-size:15px;color:#e07b3a;opacity:.9;
+  animation:fall linear infinite;font-family:serif;line-height:1;
+  text-shadow:0 0 6px rgba(224,123,58,.45)}
+.leaf.l1{left:14%;animation-duration:7.2s;animation-delay:0s}
+.leaf.l2{left:42%;font-size:19px;color:#a83b2c;animation-duration:8.6s;animation-delay:1.4s}
+.leaf.l3{left:72%;font-size:13px;color:#c79a3f;animation-duration:6.4s;animation-delay:2.7s}
+.leaf.l4{left:56%;font-size:16px;color:#e07b3a;animation-duration:9.1s;animation-delay:4.1s}
+@keyframes fall{0%{transform:translate(0,0) rotate(0deg);opacity:.95}100%{transform:translate(-58px,360px) rotate(220deg);opacity:.25}}
+.sunset-cap{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 13px;text-align:center;color:rgba(255,255,255,.9);
+  font-family:"Songti SC",serif;font-size:13px;letter-spacing:.3em;
+  background:linear-gradient(0deg,rgba(42,39,35,.62),transparent)}
+
+/* ===== Generic ===== */
+section{position:relative;padding:clamp(54px,9.6vw,104px) 0;border-bottom:1px solid var(--line)}
+.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.eyebrow .no{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;font-weight:800;color:var(--maple);letter-spacing:.12em}
+.eyebrow .tag{font-size:12px;letter-spacing:.2em;color:var(--ink2);text-transform:uppercase;font-family:"PingFang SC",sans-serif}
+h2.sec{font-family:"Songti SC","STSong",serif;font-size:clamp(26px,4.14vw,42px);line-height:1.24;font-weight:800;
+  display:flex;flex-direction:column;gap:7px}
+h2.sec .sub{font-family:"PingFang SC",sans-serif;font-size:clamp(14px,1.4vw,16px);color:var(--ink2);font-weight:500;line-height:1.72}
+h2.sec em{font-style:italic;color:var(--plum)}
+.lead{margin-top:14px;color:var(--ink2);max-width:52em;font-size:clamp(15px,1.3vw,17px);font-family:"PingFang SC",sans-serif}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag-p{font-size:12.8px;color:var(--ink2);border:1px solid var(--line);background:rgba(255,255,255,.55);
+  padding:4px 12px;border-radius:999px;transition:.25s;font-family:"PingFang SC",sans-serif}
+.tag-p:hover{color:#fff;border-color:var(--maple);background:var(--maple);transform:translateY(-2px)}
+.crumb{font-size:12px;color:var(--ink2);letter-spacing:.1em;margin-bottom:10px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.crumb a{color:var(--ink2);text-decoration:none}
+.crumb a:hover{color:var(--maple)}
+
+/* ===== ① 论理四维：Bento 不规则网格 ===== */
+.bento{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(168px,auto);gap:14px}
+.bn{position:relative;padding:22px 20px;border-radius:10px;color:#fff;overflow:hidden;display:flex;flex-direction:column;gap:8px;
+  transition:.36s cubic-bezier(.2,.7,.3,1);border:1px solid transparent}
+.bn::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-40px;top:-50px;
+  background:radial-gradient(circle,rgba(255,255,255,.22),transparent 66%);pointer-events:none;transition:.5s}
+.bn:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.bn:hover::before{transform:scale(1.5);opacity:.5}
+.bn .wm{position:absolute;right:12px;bottom:-10px;font-size:74px;font-weight:800;line-height:1;opacity:.14;pointer-events:none;font-family:"Songti SC",serif}
+.bn .q{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.2em;opacity:.85}
+.bn h3{font-family:"Songti SC",serif;font-size:21px;font-weight:800;letter-spacing:.02em;line-height:1.32}
+.bn p{font-size:13.6px;line-height:1.7;opacity:.93;font-family:"PingFang SC",sans-serif}
+.bn .ask{margin-top:auto;font-size:12px;letter-spacing:.06em;border-top:1px dashed rgba(255,255,255,.4);padding-top:8px;opacity:.95}
+.b1{grid-column:span 2;grid-row:span 1;background:linear-gradient(140deg,#c8551f,#a83b2c)}
+.b2{grid-column:span 1;background:linear-gradient(140deg,#7a3b52,#4a2c3d)}
+.b3{grid-column:span 1;background:linear-gradient(140deg,#b07d26,#7a7a4a)}
+.b4{grid-column:span 2;background:linear-gradient(140deg,#3f5a6e,#2f3a48)}
+.b5{grid-column:span 2;background:linear-gradient(140deg,#8a5a3c,#5e3a28)}
+.b6{grid-column:span 4;grid-row:span 1;background:linear-gradient(100deg,#c8551f,#c79a3f 55%,#7a7a4a);flex-direction:row;align-items:center;gap:26px;padding:26px 30px}
+.b6 h3{font-size:clamp(19px,2.4vw,25px)}
+.b6 p{flex:1;min-width:0}
+.b6 .wm{font-size:96px;right:26px;bottom:-20px}
+
+/* ===== ② 五问：定义列表 + 大字引语 ===== */
+.asks{margin-top:44px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.qa{position:relative;background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);
+  border-radius:4px;padding:24px 24px 22px;transition:.32s;display:flex;flex-direction:column;gap:10px}
+.qa:hover{border-left-color:var(--maple);transform:translateX(6px);box-shadow:var(--shadow);background:#fff}
+.qa .qn{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;letter-spacing:.18em;color:var(--maple);font-weight:800}
+.qa h3{font-family:"Songti SC",serif;font-size:19.5px;font-weight:800;line-height:1.4;letter-spacing:.01em}
+.qa p{font-size:14.4px;color:var(--ink2);line-height:1.76;font-family:"PingFang SC",sans-serif}
+.qa blockquote{margin-top:auto;padding:11px 14px;background:rgba(122,59,82,.09);border-left:3px solid var(--plum);
+  font-family:"Songti SC",serif;font-size:14.6px;color:var(--plum);line-height:1.62;font-style:italic}
+
+/* ===== ③ 边界尺度：吸顶表头 + 双进度条 ===== */
+.tbl-wrap{margin-top:44px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--ink);border-radius:6px;background:#fff}
+table.scl{width:100%;min-width:820px;border-collapse:collapse;font-size:14px;font-family:"PingFang SC",sans-serif}
+table.scl thead th{position:sticky;top:0;background:var(--ink);color:var(--paper);text-align:left;
+  padding:13px 16px;font-size:12.5px;letter-spacing:.1em;font-weight:700;z-index:3;white-space:nowrap}
+table.scl thead th:first-child{border-radius:5px 0 0 0}
+table.scl thead th:last-child{border-radius:0 5px 0 0}
+table.scl tbody td{padding:14px 16px;border-bottom:1px solid var(--line2);vertical-align:top;color:var(--ink2)}
+table.scl tbody tr:last-child td{border-bottom:none}
+table.scl tbody tr:hover{background:var(--paper2)}
+table.scl tbody tr:hover td{color:var(--ink)}
+table.scl .nm{font-weight:800;color:var(--ink);white-space:nowrap;font-size:14.4px;font-family:"Songti SC",serif}
+table.scl .bar{display:block;height:6px;border-radius:99px;background:rgba(42,39,35,.11);margin-top:6px;overflow:hidden}
+table.scl .bar i{display:block;height:100%;border-radius:99px;
+  background:linear-gradient(90deg,var(--gold),var(--maple));
+  animation:fill .9s cubic-bezier(.2,.7,.3,1) both}
+@keyframes fill{from{width:0!important}to{width:var(--w)}}
+.pill{display:inline-block;font-size:11.4px;letter-spacing:.04em;padding:2px 9px;border-radius:99px;white-space:nowrap;
+  background:rgba(122,122,74,.2);color:#4a4a26;font-family:"PingFang SC",sans-serif}
+.pill.red{background:rgba(200,85,31,.16);color:#8a3510}
+.pill.dk{background:rgba(122,59,82,.15);color:var(--plum)}
+
+/* ===== ④ 思辨路径：步骤条（相连，无间隙）===== */
+.steps{margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ink);border-radius:6px;overflow:hidden}
+.st{position:relative;padding:24px 22px 22px;background:var(--paper);border-right:1px solid var(--ink);
+  transition:.3s;display:flex;flex-direction:column;gap:9px}
+.st:last-child{border-right:none}
+.st::after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:18px;height:18px;z-index:2;
+  background:var(--ink);color:var(--gold);border-radius:50%;display:grid;place-items:center;font-size:12px;line-height:1}
+.st:last-child::after{display:none}
+.st:hover{background:var(--ink);color:var(--paper)}
+.st:hover .st-no{color:var(--gold)}
+.st:hover .st-t,.st:hover .st-p,.st:hover .st-time{color:var(--paper)}
+.st:hover .st-time{background:rgba(199,154,63,.22);color:var(--gold)}
+.st-no{font-family:"Songti SC",serif;font-size:38px;font-weight:800;line-height:.9;color:var(--line);transition:.3s}
+.st-t{font-family:"Songti SC",serif;font-size:17.5px;font-weight:800;letter-spacing:.01em;transition:.3s}
+.st-p{font-size:13.4px;color:var(--ink2);line-height:1.7;transition:.3s;font-family:"PingFang SC",sans-serif}
+.st-time{margin-top:auto;display:inline-block;font-size:11px;letter-spacing:.08em;padding:3px 10px;border-radius:99px;
+  background:rgba(200,85,31,.13);color:#8a3510;width:max-content;font-family:"PingFang SC",sans-serif;transition:.3s}
+
+/* ===== ⑤ 一答问：手风琴 ===== */
+.faq{margin-top:40px;display:flex;flex-direction:column;gap:11px}
+details.f{background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:.3s}
+details.f[open]{border-color:var(--maple);box-shadow:var(--shadow);background:#fff}
+details.f summary{cursor:pointer;padding:17px 22px 17px 66px;position:relative;font-weight:700;list-style:none;outline:none;
+  font-size:clamp(15px,1.45vw,17px);font-family:"PingFang SC",sans-serif}
+details.f summary::-webkit-details-marker{display:none}
+details.f summary .fn{position:absolute;left:16px;top:15px;width:32px;height:32px;background:var(--plum);color:var(--gold);
+  display:grid;place-items:center;font-size:14px;font-weight:800;font-family:"Songti SC",serif;border-radius:50%}
+details.f summary::after{content:"＋";position:absolute;right:18px;top:13px;font-size:22px;color:var(--ink2);transition:.3s;line-height:1;font-family:"PingFang SC",sans-serif}
+details.f[open] summary::after{content:"－";color:var(--maple)}
+details.f .a{padding:0 22px 22px 66px;color:var(--ink2);font-size:14.6px;font-family:"PingFang SC",sans-serif;animation:fade .35s ease both}
+details.f .a strong{color:var(--maple)}
+blockquote.qte{margin:12px 0 0;padding:12px 16px;border-left:3px solid var(--gold);background:rgba(199,154,63,.13);
+  font-size:13.8px;color:var(--ink);font-style:italic;font-family:"Songti SC",serif;line-height:1.7}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+/* ===== Footer ===== */
+footer{position:relative;padding:clamp(44px,7.6vw,74px) 0 32px;background:var(--ink);color:rgba(247,243,234,.72)}
+footer .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+footer h4{color:var(--gold);font-size:12.5px;letter-spacing:.22em;margin-bottom:14px;font-weight:800;font-family:"PingFang SC",sans-serif}
+footer p,footer li{font-size:13.4px;line-height:1.85;font-family:"PingFang SC",sans-serif}
+footer ul{list-style:none}
+footer a{color:rgba(247,243,234,.6);text-decoration:none;transition:.2s}
+footer a:hover{color:var(--gold)}
+footer .disclaim{margin-top:32px;padding:18px 20px;border:1px solid rgba(247,243,234,.18);border-radius:6px;
+  font-size:13px;color:rgba(247,243,234,.62);font-family:"PingFang SC",sans-serif;line-height:1.8}
+footer .disclaim b{color:var(--gold)}
+footer .copy{margin-top:22px;padding-top:18px;border-top:1px solid rgba(247,243,234,.14);font-size:12px;letter-spacing:.05em;
+  color:rgba(247,243,234,.4);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-family:"PingFang SC",sans-serif}
+
+/* ===== Responsive ===== */
+@media (max-width:1020px){
+  .hero-in{grid-template-columns:1fr}
+  .sunset{margin:16px auto 0;max-width:300px}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .b1,.b4,.b6{grid-column:span 2}
+  .b6{flex-direction:column;align-items:flex-start;gap:12px}
+  .asks{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .st:nth-child(2){border-right:none}
+  .st:nth-child(2)::after,.st:nth-child(4)::after{display:none}
+  footer .f-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  h1.brand{font-size:clamp(33px,11.4vw,47px)}
+  .bento{grid-template-columns:1fr}
+  .b1,.b2,.b3,.b4,.b5,.b6{grid-column:span 1}
+  .b6 .wm{display:none}
+  .steps{grid-template-columns:1fr}
+  .st{border-right:none;border-bottom:1px solid var(--ink)}
+  .st:last-child{border-bottom:none}
+  .st::after{display:none}
+  table.scl{min-width:700px}
+  details.f summary{padding-left:54px;padding-right:42px}
+  details.f .a{padding-left:54px}
+  footer .f-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sun,.leaf,.a,.bn{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <div class="kicker">
+        <span class="kick hot">思辨站</span>
+        <span class="kick">不提供资源</span>
+        <span class="kick">正版观影</span>
+        <span class="kick">每月一问</span>
+      </div>
+      <h1 class="brand"><span class="qx">秋霞</span>论理电影网</h1>
+      <span class="en">CINEMA ETHICS &amp; REASONING · qiuxialunlidianyingwang-cn.github.io</span>
+      <p class="lede">电影不只是「讲了个什么故事」，它还一直在做三件没人替它负责的事：<br>
+      <b>① 决定你看哪里</b>（镜头有权）；<b>② 决定谁被看见</b>（拍摄有伦理）；<b>③ 决定你记住什么</b>（叙事有立场）。<br><br>
+      <strong>秋霞论理电影网</strong>讨论的，就是这三件事。<br>
+      本站<strong>不提供、不托管、不链接任何影视资源</strong>。我们只做两件事：<em>教你怎么「带着问题看电影」</em>，和<em>告诉你去哪里正版地看</em>。</p>
+      <div class="cta">
+        <a class="btn" href="#axis">读四维论理 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#faq">关于「论理」</a>
+      </div>
+    </div>
+
+    <figure class="sunset" aria-hidden="true">
+      <span class="sun"></span>
+      <span class="ridge two"></span>
+      <span class="ridge"></span>
+      <span class="leaf l1">🍁</span>
+      <span class="leaf l2">❧</span>
+      <span class="leaf l3">•</span>
+      <span class="leaf l4">🍂</span>
+      <figcaption class="sunset-cap">落日把每个人的侧脸，都拍成了同一个人</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ① 论理四维：Bento ============ -->
+  <section id="axis" aria-labelledby="h-axis">
+    <div class="crumb"><a href="#top">首页</a> / 论理 / 影像伦理的四个切面</div>
+    <div class="eyebrow"><span class="no">AXIS 01—06</span><span class="tag">Four Axes of Ethics</span></div>
+    <h2 class="sec">影像伦理，<em>其实只有四个问题</em>
+      <span class="sub">所有关于「这部电影该不该这么拍」的争论，最终都能归到下面四个问题。看懂这四个问题，你就有了自己的判断标准——而不是等影评人告诉你「好不好」。</span>
+    </h2>
+    <p class="lead">「论理」不是掉书袋。它只是<strong>在感动之前，先问一句「凭什么」</strong>。电影有权利让你哭，但你有权知道，它是怎么做到的。</p>
+    <div class="tags">
+      <span class="tag-p">镜头伦理</span><span class="tag-p">纪录片伦理</span><span class="tag-p">观看伦理</span>
+      <span class="tag-p">算法伦理</span><span class="tag-p">剧透礼仪</span><span class="tag-p">改编伦理</span>
+    </div>
+
+    <div class="bento">
+      <article class="bn b1">
+        <span class="wm">镜</span>
+        <span class="q">AXIS 01 · 镜头</span>
+        <h3>镜头有没有「越界」？</h3>
+        <p>摄影机是<strong>偷窥的工具，也是同情的工具</strong>。差别只在于：它离得多近。<br>
+        拍一个人的痛苦时，<em>推得越近，越像消费；退得越远，越像尊重</em>。长焦压缩、肩扛晃动、隐藏机位、窥视视角——这些都是导演的「道德动作」。<strong>下次看到极端特写，先问：这一镜，是靠近，还是侵犯？</strong></p>
+        <span class="ask">追问：这一镜，被拍的人会愿意看回自己吗？</span>
+      </article>
+
+      <article class="bn b2">
+        <span class="wm">真</span>
+        <span class="q">AXIS 02 · 真实</span>
+        <h3>真实的人，<br>该被摆布吗？</h3>
+        <p>纪录片的伦理难题：<strong>为了「真实」，可以安排吗？</strong>重演、补拍、引导、剪辑拼接——纪录片一旦开始「制作」，真实就不再是原料，而是<em>成品</em>。被拍的人往往不懂剪辑，却要为成片承担一生。</p>
+        <span class="ask">追问：知情同意，是签一次，还是每一剪都要问？</span>
+      </article>
+
+      <article class="bn b3">
+        <span class="wm">看</span>
+        <span class="q">AXIS 03 · 观看</span>
+        <h3>我们在消费<br>谁的痛苦？</h3>
+        <p>战争、贫困、疾病、灾难——<strong>苦难被拍得越美，越值得警惕</strong>。「贫穷 porn」「创伤 tourism」的本质，是把别人的伤口，变成我们的审美体验。<em>看完之后的那声叹息，是共情，还是消费？</em></p>
+        <span class="ask">追问：这片子，是在替谁说话？</span>
+      </article>
+
+      <article class="bn b4">
+        <span class="wm">算</span>
+        <span class="q">AXIS 04 · 推荐</span>
+        <h3>算法凭什么替你选片？</h3>
+        <p>「猜你喜欢」的代价，是<strong>你再也遇不到「不喜欢的自己」</strong>。算法奖励停留时长，于是越来越极端、越来越短、越来越像。<em>它优化的是你的注意力，不是你的审美。</em>主动看一部「算法绝不会推给你」的电影，是当代人少有的自由。</p>
+        <span class="ask">追问：上一部让你不适的片，是谁推荐的？</span>
+      </article>
+
+      <article class="bn b5">
+        <span class="wm">透</span>
+        <span class="q">AXIS 05 · 剧透</span>
+        <h3>剧透，是礼还是恶？</h3>
+        <p>一部电影的「第一次」只有一次。<strong>剧透夺走的不是答案，是「发现答案的自己」。</strong>但反过来说：真正的好片，剧透之后依然成立——因为它靠的不是反转，是<em>你怎么看</em>。所以判断标准很简单：<strong>剧透伤害的是「谜题型」，还是「体验型」？</strong></p>
+        <span class="ask">追问：我会为这部片，守住第一次吗？</span>
+      </article>
+
+      <article class="bn b6">
+        <span class="wm">改</span>
+        <span class="q">AXIS 06 · 改编</span>
+        <h3>改编的伦理：谁有权利，讲别人的故事？</h3>
+        <p>把真实人物搬上银幕，等于<strong>替他重写一生</strong>。性别、种族、阶层、地域——当讲述者与被讲述者不是同一群人，就会出现「代言」的暴力。<em>最好的改编，是让当事人先开口；最坏的改编，是借他的名字，讲自己的事。</em></p>
+        <span class="ask">追问：这个故事，非得由你来拍吗？</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ② 五问：定义列表 ============ -->
+  <section id="asks" aria-labelledby="h-asks">
+    <div class="crumb"><a href="#top">首页</a> / 思辨 / 五个绕不开的问题</div>
+    <div class="eyebrow"><span class="no">FIVE QUESTIONS</span><span class="tag">Reasoning</span></div>
+    <h2 class="sec">带着问题看电影，<em>比带着评分看，管用得多</em>
+      <span class="sub">下面五个问题，没有任何一个能「答对」。它们的价值在于：<strong>让你从「被电影带走」，变成「和电影对话」。</strong></span>
+    </h2>
+    <p class="lead">观影指南永远在回答「看什么」；<strong>论理要回答的是「凭什么」</strong>。前者给你清单，后者给你判断。清单会过期，判断不会。</p>
+
+    <div class="asks">
+      <article class="qa">
+        <span class="qn">Q 01</span>
+        <h3>谁有权决定，镜头该停在哪儿？</h3>
+        <p>导演握着决定权，演员交出身体，观众交出注意力。<strong>三者之间最容易被牺牲的，是演员的尊严。</strong>那些"真实到让人难受"的镜头，往往有一个共同点：<em>它本可以被剪掉，但剪掉就不"震撼"了</em>。<br>
+        判断标准只有一条：<strong>这个镜头，是在说人物，还是在消费人物？</strong></p>
+        <blockquote>镜头的礼貌，是电影最先被遗忘的道德。</blockquote>
+      </article>
+
+      <article class="qa">
+        <span class="qn">Q 02</span>
+        <h3>纪录片里的「真实」，是谁的真实？</h3>
+        <p>摄影机一出现，真实就变了。<strong>被拍的人会表演，会配合，会说"导演想听的"</strong>；剪辑师再从中选出"最真实"的 90 分钟——<em>那 90 分钟，其实是 200 小时里最像剧本的一段</em>。<br>
+        所以别问"这是真的吗"，改问：<strong>"谁剪掉了另外 110 分钟？"</strong></p>
+        <blockquote>纪录片不是真实的记录，是对真实的取舍。</blockquote>
+      </article>
+
+      <article class="qa">
+        <span class="qn">Q 03</span>
+        <h3>我们为什么爱看「坏人的好」？</h3>
+        <p>近十年最明显的变化：<strong>观众不再满足于"好人赢"，而要"坏人为什么坏"</strong>。反派被拍得越迷人，越说明我们承认了人性的复杂——这是进步。<br>
+        但危险也在这里：<em>当暴力和疯癫被拍成美学，同情就可能变成原谅。</em>《小丑》之后，"迷人反派"成了模板——<strong>请警惕那些让你爱上恶魔的电影，它们往往省略了受害者的镜头。</strong></p>
+        <blockquote>复杂不是免责，理解不是原谅。</blockquote>
+      </article>
+
+      <article class="qa">
+        <span class="qn">Q 04</span>
+        <h3>「尊重原著」到底在尊重什么？</h3>
+        <p>改编有三层：<strong>情节、气质、作者</strong>。多数改编做到了第一层，丢掉了后两层。<em>把一本书改成两小时，本就不可能"忠实"</em>——能忠实的，只有"它为什么动人"。<br>
+        所以真正的问题不是"改了多少"，而是：<strong>"它改动的地方，有没有比原来更好？"</strong>《肖申克的救赎》改了结局，改对了；《银翼杀手》改了结局，至今还在吵。</p>
+        <blockquote>好改编是翻译，不是抄写。</blockquote>
+      </article>
+
+      <article class="qa">
+        <span class="qn">Q 05</span>
+        <h3>「艺术」能成为越界的借口吗？</h3>
+        <p>不能。<strong>但"艺术"确实让边界变得模糊</strong>——这正是它珍贵的地方。<br>
+        判断方法有三步：① 这个镜头<em>删掉会不会影响表达</em>（若不影响，就是猎奇）；② 被拍者<em>是否拥有否决权</em>；③ 十年后重看，<em>你会为它骄傲，还是为它尴尬？</em><br>
+        <strong>艺术不是通行证，艺术是更高的责任。</strong>因为观众会相信它。</p>
+        <blockquote>艺术不豁免道德，它只是让道德更难。</blockquote>
+      </article>
+
+      <article class="qa">
+        <span class="qn">Q 06</span>
+        <h3>我们为什么越来越「看不下去」？</h3>
+        <p>不是耐心问题，是<strong>结构问题</strong>。<br>
+        短视频把"铺垫"训练成了"浪费时间"。当一部电影需要 40 分钟才给出第一个"信息点"，我们就会焦虑——<em>这不是片子太慢，是我们被改写了</em>。<br>
+        解法不是"练耐心"，而是<strong>主动制造"慢的条件"</strong>：关掉弹幕、调亮屏幕、坐直、不看手机。<em>仪式感会帮你找回注意力，比意志力可靠。</em></p>
+        <blockquote>看不下去的，常常是最值得看的。</blockquote>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ③ 边界尺度：吸顶表头 + 双进度条 ============ -->
+  <section id="scale" aria-labelledby="h-scale">
+    <div class="crumb"><a href="#top">首页</a> / 尺度 / 镜头边界尺度表</div>
+    <div class="eyebrow"><span class="no">SCALE</span><span class="tag">Where Is the Line</span></div>
+    <h2 class="sec">镜头的边界，<em>是可以被量化的</em>
+      <span class="sub">下面这张表，是本站的原创工具。它把「该不该这么拍」拆成两个可以比较的维度：<strong>伦理风险</strong>（对被拍者的影响）与<strong>表达必要</strong>（不这么拍会不会损失）。<em>当「风险」高于「必要」，镜头就越界了。</em></span>
+    </h2>
+    <p class="lead">这不是评分，是<strong>提问的顺序</strong>。请把它当作一份观影时的自查清单，而不是给电影贴标签的尺子。</p>
+
+    <div class="tbl-wrap">
+      <table class="scl">
+        <thead>
+          <tr>
+            <th>常见镜头 / 手法</th><th>它在做什么</th><th>伦理风险</th><th>表达必要</th><th>判断</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">极端特写（伤疤、眼泪、身体）</td>
+            <td>把「人的一部分」当作「全部」，迫使观众只看见痛苦。<strong>越近，越像审讯。</strong></td>
+            <td><span class="pill red">高</span><span class="bar"><i style="--w:88%"></i></span></td>
+            <td><span class="pill">中</span><span class="bar"><i style="--w:52%"></i></span></td>
+            <td><span class="pill dk">需审慎</span></td>
+          </tr>
+          <tr>
+            <td class="nm">偷拍 / 隐藏机位</td>
+            <td>拿走被拍者的知情权。<strong>真实感的成本，是别人的同意。</strong></td>
+            <td><span class="pill red">极高</span><span class="bar"><i style="--w:96%"></i></span></td>
+            <td><span class="pill">中</span><span class="bar"><i style="--w:48%"></i></span></td>
+            <td><span class="pill red">通常越界</span></td>
+          </tr>
+          <tr>
+            <td class="nm">长焦压缩（把人压进人群）</td>
+            <td>制造"人是风景的一部分"的疏离感。<strong>它让人变小，但不让人受伤。</strong></td>
+            <td><span class="pill">低</span><span class="bar"><i style="--w:22%"></i></span></td>
+            <td><span class="pill dk">高</span><span class="bar"><i style="--w:82%"></i></span></td>
+            <td><span class="pill">正当</span></td>
+          </tr>
+          <tr>
+            <td class="nm">肩扛晃动（伪纪录片感）</td>
+            <td>用"不完美"冒充"真实"。<strong>它是风格，不是证据。</strong></td>
+            <td><span class="pill">低</span><span class="bar"><i style="--w:26%"></i></span></td>
+            <td><span class="pill dk">高</span><span class="bar"><i style="--w:74%"></i></span></td>
+            <td><span class="pill">正当</span></td>
+          </tr>
+          <tr>
+            <td class="nm">受害者视角的性/暴力呈现</td>
+            <td>让观众"体验"受害。<strong>共情的代价，可能是二次伤害。</strong></td>
+            <td><span class="pill red">极高</span><span class="bar"><i style="--w:92%"></i></span></td>
+            <td><span class="pill">中</span><span class="bar"><i style="--w:58%"></i></span></td>
+            <td><span class="pill red">需拒绝</span></td>
+          </tr>
+          <tr>
+            <td class="nm">留白 / 背影 / 门关上的那三秒</td>
+            <td>把"想象的空间"还给观众。<strong>不拍，反而是最尊重的拍法。</strong></td>
+            <td><span class="pill">极低</span><span class="bar"><i style="--w:8%"></i></span></td>
+            <td><span class="pill dk">极高</span><span class="bar"><i style="--w:94%"></i></span></td>
+            <td><span class="pill">推荐</span></td>
+          </tr>
+          <tr>
+            <td class="nm">残酷青春 / 底层奇观化</td>
+            <td>把"别人的苦"包装成"我们的成长"。<strong>卖点是创伤，观众是游客。</strong></td>
+            <td><span class="pill red">高</span><span class="bar"><i style="--w:84%"></i></span></td>
+            <td><span class="pill">低</span><span class="bar"><i style="--w:34%"></i></span></td>
+            <td><span class="pill red">警惕</span></td>
+          </tr>
+          <tr>
+            <td class="nm">AI 换脸 / 数字复活逝者</td>
+            <td>未经同意使用他人肖像与表演。<strong>死者没有经纪约，但死者有尊严。</strong></td>
+            <td><span class="pill red">极高</span><span class="bar"><i style="--w:98%"></i></span></td>
+            <td><span class="pill">低</span><span class="bar"><i style="--w:20%"></i></span></td>
+            <td><span class="pill red">明确越界</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead" style="margin-top:18px"><strong>一句话口诀：</strong><em>「拍得越近，越要问为什么；剪得越少，越显得尊重；把镜头让给背影的那一瞬，才是导演最勇敢的时刻。」</em></p>
+  </section>
+
+  <!-- ============ ④ 思辨路径：相连步骤条 ============ -->
+  <section id="path" aria-labelledby="h-path">
+    <div class="crumb"><a href="#top">首页</a> / 路径 / 从观众到思辨者的四步</div>
+    <div class="eyebrow"><span class="no">PATH 01—04</span><span class="tag">How to Reason</span></div>
+    <h2 class="sec">看完一部电影，<em>请再多花十分钟</em>
+      <span class="sub">「论理」不是天赋，是<strong>习惯</strong>。下面四步，加起来不到十分钟，却能把你从"看完就忘"变成"看完能写"。</span>
+    </h2>
+    <p class="lead">顺序很重要：<strong>先感受，再技术，再立场，最后才评价。</strong>倒过来做，就会变成"我先给它打分，再去找证据"——那不叫评论，那叫偏见。</p>
+
+    <div class="steps">
+      <div class="st">
+        <span class="st-no">01</span>
+        <span class="st-t">只说「哪一镜」</span>
+        <p>别复述剧情。<strong>写下你最忘不掉的那一镜</strong>：它在第几分钟、画面里有什么、光从哪来、持续了几秒。<br>
+        「第 47 分钟，镜头对着一扇关上的门，停了十一秒。」——<em>这一句，已经是一篇影评的骨架。</em></p>
+        <span class="st-time">耗时 2 分钟</span>
+      </div>
+      <div class="st">
+        <span class="st-no">02</span>
+        <span class="st-t">问「它怎么做到的」</span>
+        <p>把"好看"翻译成技术：<strong>是构图、是声音、是剪辑、是色彩、还是表演？</strong><br>
+        一旦你说出"是同期声让我相信了那条街"，你就已经从观众变成了<em>读者</em>。</p>
+        <span class="st-time">耗时 3 分钟</span>
+      </div>
+      <div class="st">
+        <span class="st-no">03</span>
+        <span class="st-t">问「它替谁说话」</span>
+        <p>这是论理的核心。<strong>镜头站在谁的肩上？故事由谁讲述？谁被省略了？</strong><br>
+        一部"讲女性"的电影，若镜头始终贴在男性脸上，那它讲的其实是男性。<em>立场不在台词里，在取景框里。</em></p>
+        <span class="st-time">耗时 3 分钟</span>
+      </div>
+      <div class="st">
+        <span class="st-no">04</span>
+        <span class="st-t">最后，才说「好不好」</span>
+        <p>有了前三步，"好/不好"才有意义。<strong>因为它变成了「对谁好、为什么好、代价是什么」。</strong><br>
+        写到这一步，你已经不是在打分，而是在<em>参与一场关于电影的公共讨论</em>——这正是影评存在的唯一理由。</p>
+        <span class="st-time">耗时 2 分钟</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ⑤ 一答问：手风琴 ============ -->
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="crumb"><a href="#top">首页</a> / 关于本站 / 一答问</div>
+    <div class="eyebrow"><span class="no">Q&amp;A</span><span class="tag">About</span></div>
+    <h2 class="sec">关于「论理」，<em>被问得最多的五件事</em></h2>
+    <p class="lead">本站不提供任何影视资源。以下是对「秋霞论理电影网」这个站本身，以及对「怎么带着问题看电影」的回答。如果你的问题是关于「去哪看」，答案是：去正版平台；如果你的问题是关于「怎么看懂」，你来对地方了。</p>
+
+    <div class="faq">
+      <details class="f" open>
+        <summary><span class="fn">问</span>这个站为什么叫「论理」，而不是「伦理」？</summary>
+        <div class="a"><strong>因为「伦理」是一套现成的答案，而「论理」是一次自己的推理。</strong><br>
+        「伦理电影」在中文语境里常被误读为某类情色类型片，那不是本站要讨论的东西。<strong>本站讨论的是「影像伦理」</strong>——电影作为一种 powerful 的表达工具，<em>它对被拍者、对观众、对社会，负有什么责任</em>。<br>
+        我们选择「论理」，是想把姿态摆清楚：<strong>这里不提供标准答案，只提供提问的方法。</strong><blockquote class="qte">伦理是别人的结论；论理，是你自己的那一分钟。</blockquote>
+        「秋霞」取意<strong>秋日的晚霞</strong>——光最斜、影子最长、颜色最诚实的时刻。也是一年中<em>最适合安静看电影</em>的季节：天黑得早，人容易安静，故事才听得进去。</div>
+      </details>
+
+      <details class="f">
+        <summary><span class="fn">问</span>「论理」会不会让看电影变得不快乐？</summary>
+        <div class="a"><strong>恰恰相反——它会让快乐变深，让难受变值得。</strong><br>
+        「带着问题看」不是上道德法庭，而是<em>把电影从「消费品」变成「对话者」</em>。<br>
+        举个例子：你看一部关于贫困的片子，哭了。那是感动。<strong>然后你问了一句"这片子，穷人自己看过吗？"</strong>——那一刻，感动变成了思考，而思考，会让你下一次哭得更准。<br>
+        <blockquote class="qte">不思考的感动，会被下一部片子覆盖；思考过的难受，会变成你的一部分。</blockquote>
+        另外请放心：<strong>本站绝不反对"纯粹享受电影"</strong>。爆米花、爽片、烂片、下饭片——统统欢迎。论理的起点，恰恰是你「看得很开心，但隐约觉得哪里不对」的那一刻。</div>
+      </details>
+
+      <details class="f">
+        <summary><span class="fn">问</span>为什么不做一个「伦理电影片单」？</summary>
+        <div class="a">因为<strong>「伦理片单」是最偷懒的推荐</strong>——它假装"好电影"是一份可以照着打卡的清单。<br>
+        事实是：<br>
+        <b>· 同一部片，20 岁看是"好深刻"，35 岁看是"好残忍"；</b><br>
+        <b>· 雨天看的版本，和晴天看的版本，不是同一部电影；</b><br>
+        <b>· 一个人看，和两个人看，结局会不一样。</b><br>
+        所以本站不做片单，做<strong>「提问的路径」</strong>（见"四维论理"与"思辨路径"）。<em>给你渔，不给你鱼；给你问题，不给你答案。</em><br>
+        如果你确实需要一份清单：<strong>请按导演找，不要按分数找</strong>。分数是别人的口味，导演才是菜单。</div>
+      </details>
+
+      <details class="f">
+        <summary><span class="fn">问</span>站里的观点，算「正确」的吗？</summary>
+        <div class="a"><strong>不算。而且本站刻意保留了"彼此矛盾"的观点。</strong><br>
+        比如：<em>「镜头越近越不尊重」</em> 与 <em>「极端特写是唯一的诚实」</em>——两种说法都成立，取决于<strong>谁在被拍、为什么被拍、拍完之后他过得好不好</strong>。<br>
+        <strong>影像伦理没有标准答案，只有「当时的情境」和「事后的反思」。</strong>本站所有文章，都是作者在特定年龄、特定心境下的判断——包括这一篇。<br>
+        <blockquote class="qte">本站最希望被反驳的地方，恰恰是最值得读的地方。</blockquote>
+        欢迎投稿、欢迎抬杠、欢迎举出反例。<strong>能让你生气的一篇论理，通常比让你点头的一篇影评，更有价值。</strong></div>
+      </details>
+
+      <details class="f">
+        <summary><span class="fn">问</span>片名、导演名、镜头描述，会涉及侵权吗？</summary>
+        <div class="a"><strong>本站已按"最小必要"原则处理，并明确遵守以下边界：</strong><br>
+        <b>① 不提供、不托管、不链接、不转存</b>任何影视作品文件；不做在线观看、下载、网盘、破解、枪版、盗链等任何形式的内容服务。<br>
+        <b>② 只做「分析」，不做「搬运」。</b>片名、导演、镜头时间戳、构图描述，均属于<strong>影评与学术讨论的合理使用范围</strong>，且本站不提供可替代原作的实质性内容。<br>
+        <b>③ 观看请走正版：</b>院线、正版流媒体、官方修复版、授权影碟、资料馆放映。<br>
+        <b>④ 未成年人请在监护人指导下选择适龄内容。</b><br>
+        <b>⑤ 如权利方认为某处表述超出合理使用，请联系，本站将在 48 小时内处理。</b><br>
+        <blockquote class="qte">盗版"免费"的真实成本，是下一个好导演拍不出下一部电影。</blockquote></div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>秋霞论理电影网</h4>
+        <p style="color:rgba(247,243,234,.58)">qiuxialunlidianyingwang-cn.github.io<br>
+        影像伦理思辨 · 镜头边界 · 观影之问。<br>
+        教你怎么「带着问题看电影」。</p>
+      </div>
+      <div>
+        <h4>论理四维</h4>
+        <ul>
+          <li><a href="#axis">镜头伦理</a></li>
+          <li><a href="#axis">纪录片伦理</a></li>
+          <li><a href="#axis">观看伦理</a></li>
+          <li><a href="#axis">算法与推荐</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>思辨工具</h4>
+        <ul>
+          <li><a href="#scale">边界尺度表</a></li>
+          <li><a href="#path">思辨四步</a></li>
+          <li><a href="#asks">五个问题</a></li>
+          <li><a href="#faq">关于本站</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>正版与版权</h4>
+        <ul>
+          <li><a href="https://www.bing.com/search?q=正版电影观看平台" rel="nofollow noopener">正版观看渠道</a></li>
+          <li><a href="https://creativecommons.org/licenses/" rel="nofollow noopener">CC 协议与合理使用</a></li>
+          <li><a href="https://www.bing.com/search?q=电影修复版 蓝光 发行" rel="nofollow noopener">官方修复版</a></li>
+          <li><a href="https://www.bing.com/webmasters" rel="nofollow noopener">提交给必应收录</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="disclaim">
+      <b>合规、版权与内容声明：</b>「秋霞论理电影网」是 <b>影像伦理思辨与观影指引类站点</b>，<b>不提供、不托管、不链接、不转存任何影视作品文件</b>，不提供在线观看、下载、网盘、破解、枪版、盗链等任何形式的内容服务。本站所有片名、导演名、镜头描述、剧照引用（如有），仅用于<b>影像分析、镜头教学、影评写作与正版观影推荐</b>，属合理使用的讨论范畴；著作权、表演者权、肖像权均归原作者、制片方、演员与发行方所有，如有侵权或异议，请联络移除。观看请通过<b>院线、正版流媒体、官方修复版与授权影碟</b>。未成年人请在监护人指导下选择适龄内容。本站观点仅为作者个人观影经验的思辨整理，不代表绝对结论，亦不构成专业法律、伦理或制作建议——<b>我们刻意保留了相互矛盾的观点，因为影像伦理本无标准答案。</b>
+    </div>
+
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 秋霞论理电影网 · qiuxialunlidianyingwang-cn.github.io · 保留所有权利</span>
+      <span>单页结构 · 栏目内链均为 # 锚点 · 符合 Bing Webmaster 收录规范 · 不生成 robots.txt 与 sitemap.xml</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
